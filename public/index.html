@@ -1,0 +1,2134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f3eb">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="2026国庆安徽山水七日自驾旅行手册，包含行程倒计时、路线、酒店、门票、逐日安排和实用贴士。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23b0472d'/%3E%3Cpath d='M17 13h30v38H17z' fill='none' stroke='%23fff' stroke-width='5'/%3E%3Cpath d='M24 23h16M24 32h16M24 41h11' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <title>2026国庆安徽自驾旅行手册</title>
+  <style>
+    :root {
+      --bg: #f6f3eb;
+      --surface: #fffdf8;
+      --surface-2: #eee9dc;
+      --surface-3: #e5dfd0;
+      --ink: #16211d;
+      --muted: #65706b;
+      --line: #d8d1c2;
+      --line-strong: #b8af9e;
+      --shadow: 0 18px 50px rgba(45, 50, 40, .10);
+      --accent: #b0472d;
+      --accent-soft: #f4ded7;
+      --focus: #245f4f;
+      --focus-soft: #dcece6;
+      --warning: #9a5b12;
+      --warning-soft: #f7ead7;
+      --blue: #245e83;
+      --blue-soft: #deebf2;
+      --purple: #73558d;
+      --purple-soft: #ece5f2;
+      --radius: 8px;
+      --header-bg: rgba(246, 243, 235, .88);
+      --map-paper: #fffdf8;
+      color-scheme: light;
+    }
+
+    :root[data-theme="night"] {
+      --bg: #101713;
+      --surface: #17201b;
+      --surface-2: #202a24;
+      --surface-3: #29352e;
+      --ink: #edf2ed;
+      --muted: #a8b4ad;
+      --line: #34433a;
+      --line-strong: #526359;
+      --shadow: 0 18px 55px rgba(0, 0, 0, .28);
+      --accent: #dc7a5f;
+      --accent-soft: #3d2a24;
+      --focus: #77c7ab;
+      --focus-soft: #1d382f;
+      --warning: #e4ad62;
+      --warning-soft: #3a2e1e;
+      --blue: #83b8d5;
+      --blue-soft: #1d303b;
+      --purple: #b79bd1;
+      --purple-soft: #30273a;
+      --header-bg: rgba(16, 23, 19, .90);
+      --map-paper: #151e19;
+      color-scheme: dark;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 92px;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      text-rendering: optimizeLegibility;
+      transition: background-color .35s ease, color .35s ease;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .site-header {
+      position: relative;
+      border-bottom: 1px solid var(--line);
+      background: var(--surface);
+    }
+
+    .header-inner {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 36px 0 30px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow svg {
+      width: 16px;
+      height: 16px;
+      flex: 0 0 auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: 10px 0 10px;
+      font-size: clamp(30px, 6.2vw, 54px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(15px, 2vw, 18px);
+    }
+
+    .header-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 22px;
+    }
+
+    .meta-chip,
+    .status-pill,
+    .link-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 32px;
+      padding: 5px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface-2);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .meta-chip svg,
+    .status-pill svg,
+    .link-chip svg {
+      width: 15px;
+      height: 15px;
+      flex: 0 0 auto;
+    }
+
+    .section-nav {
+      position: sticky;
+      z-index: 20;
+      top: 0;
+      border-bottom: 1px solid var(--line);
+      background: var(--header-bg);
+      backdrop-filter: blur(16px);
+    }
+
+    .nav-track {
+      display: flex;
+      gap: 6px;
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 9px 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .nav-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 38px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 750;
+      white-space: nowrap;
+      transition: background-color .2s ease, color .2s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus-visible {
+      background: var(--surface-3);
+      color: var(--ink);
+      outline: none;
+    }
+
+    .nav-link svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    main {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 30px 0 72px;
+    }
+
+    section {
+      scroll-margin-top: 90px;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: end;
+      margin: 48px 0 18px;
+    }
+
+    .section-head:first-child {
+      margin-top: 0;
+    }
+
+    .section-head h2 {
+      margin: 0 0 5px;
+      font-size: clamp(24px, 4vw, 34px);
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    .section-head p {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .section-index {
+      color: var(--line-strong);
+      font-size: 13px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .focus-card {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(22px, 5vw, 42px);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(135deg, var(--focus-soft), transparent 58%),
+        var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .focus-card::after {
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: 10%;
+      width: 180px;
+      height: 180px;
+      border: 30px solid color-mix(in srgb, var(--focus) 20%, transparent);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .focus-top {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .china-clock {
+      color: var(--muted);
+      font-size: 13px;
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+    }
+
+    .focus-title {
+      position: relative;
+      z-index: 1;
+      max-width: 820px;
+      margin: 28px 0 8px;
+      font-size: clamp(27px, 5vw, 46px);
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .focus-meta {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .countdown {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 26px;
+      max-width: 700px;
+    }
+
+    .count-unit {
+      min-width: 0;
+      padding: 14px 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: color-mix(in srgb, var(--surface) 86%, transparent);
+      text-align: center;
+    }
+
+    .count-value {
+      display: block;
+      font-size: clamp(30px, 8vw, 58px);
+      font-variant-numeric: tabular-nums;
+      font-weight: 850;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .count-label {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 750;
+    }
+
+    .route-map-wrap {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .map-panel,
+    .map-legend,
+    .panel,
+    .ticket-card,
+    .hotel-card,
+    .day-card,
+    .tip-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .map-panel {
+      min-height: 620px;
+      padding: 12px;
+      background: var(--map-paper);
+    }
+
+    #overview-map {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .route-line {
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 7;
+      opacity: .92;
+      vector-effect: non-scaling-stroke;
+      filter: url(#roughStroke);
+    }
+
+    .route-node circle {
+      fill: var(--map-paper);
+      stroke-width: 4;
+      vector-effect: non-scaling-stroke;
+    }
+
+    .route-node text {
+      fill: var(--ink);
+      font-size: 18px;
+      font-weight: 800;
+      paint-order: stroke;
+      stroke: var(--map-paper);
+      stroke-linejoin: round;
+      stroke-width: 6px;
+    }
+
+    .route-node .small-label {
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .map-legend {
+      padding: 18px;
+    }
+
+    .map-legend h3 {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    .legend-list {
+      display: grid;
+      gap: 9px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .legend-item {
+      display: grid;
+      grid-template-columns: 13px minmax(0, 1fr);
+      gap: 10px;
+      align-items: start;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .legend-swatch {
+      width: 13px;
+      height: 13px;
+      margin-top: 4px;
+      border-radius: 50%;
+    }
+
+    .legend-item strong {
+      display: block;
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    .map-note {
+      margin: 18px 0 0;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .confirmed-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .overview-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 14px;
+      grid-column: 1 / -1;
+    }
+
+    .overview-stat {
+      padding: 15px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .overview-stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .overview-stat strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 17px;
+      line-height: 1.25;
+    }
+
+    .panel {
+      padding: 18px;
+    }
+
+    .panel + .panel {
+      margin-top: 14px;
+    }
+
+    .panel-title-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 13px;
+    }
+
+    .panel-title-row h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .panel-note {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .hotel-list,
+    .ticket-list {
+      display: grid;
+      gap: 11px;
+    }
+
+    .hotel-card,
+    .ticket-card {
+      padding: 15px;
+      background: var(--surface-2);
+    }
+
+    .card-kicker {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 7px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    .card-title {
+      margin: 0 0 7px;
+      font-size: 17px;
+      line-height: 1.35;
+    }
+
+    .card-lines {
+      display: grid;
+      gap: 5px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .card-lines strong {
+      color: var(--ink);
+    }
+
+    .card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .route-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      min-height: 38px;
+      padding: 8px 11px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .route-action:hover,
+    .route-action:focus-visible {
+      border-color: var(--focus);
+      color: var(--focus);
+      outline: none;
+    }
+
+    .route-action svg {
+      width: 15px;
+      height: 15px;
+      flex: 0 0 auto;
+    }
+
+    .ticket-card {
+      border-left: 4px solid var(--ticket-color, var(--blue));
+    }
+
+    .ticket-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .ticket-item {
+      padding: 4px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .charging-rules {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 13px;
+    }
+
+    .charging-rule {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 9px;
+      border: 1px solid color-mix(in srgb, var(--focus) 35%, var(--line));
+      border-radius: 999px;
+      background: var(--focus-soft);
+      color: var(--focus);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .charging-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 11px;
+    }
+
+    .charge-card {
+      padding: 15px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface-2);
+    }
+
+    .charge-card h4 {
+      margin: 0 0 3px;
+      font-size: 16px;
+    }
+
+    .charge-card .leg {
+      margin: 0 0 11px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .charge-stop {
+      display: grid;
+      grid-template-columns: 60px minmax(0, 1fr);
+      gap: 9px;
+      padding: 10px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .charge-stop:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .charge-stop:last-child {
+      padding-bottom: 0;
+    }
+
+    .charge-window {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 900;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .charge-detail strong {
+      display: block;
+      font-size: 14px;
+    }
+
+    .charge-detail span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .day-list {
+      display: grid;
+      gap: 13px;
+    }
+
+    .day-card {
+      overflow: hidden;
+    }
+
+    .day-card[open] {
+      box-shadow: var(--shadow);
+    }
+
+    .day-summary {
+      display: grid;
+      grid-template-columns: 74px minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      padding: 17px 18px;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .day-summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .day-number {
+      color: var(--day-color);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .08em;
+    }
+
+    .day-summary-text h3 {
+      margin: 0;
+      font-size: 19px;
+      line-height: 1.3;
+    }
+
+    .day-summary-text p {
+      margin: 3px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .summary-arrow {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      color: var(--muted);
+      transition: transform .2s ease;
+    }
+
+    .day-card[open] .summary-arrow {
+      transform: rotate(180deg);
+    }
+
+    .summary-arrow svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .day-body {
+      padding: 0 18px 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .day-alerts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 14px 0 0;
+    }
+
+    .alert-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      max-width: 100%;
+      padding: 6px 9px;
+      border: 1px solid color-mix(in srgb, var(--warning) 35%, var(--line));
+      border-radius: 999px;
+      background: var(--warning-soft);
+      color: var(--warning);
+      font-size: 12px;
+      font-weight: 750;
+    }
+
+    .alert-chip svg {
+      width: 14px;
+      height: 14px;
+      flex: 0 0 auto;
+    }
+
+    .day-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .route-expand {
+      color: var(--day-color);
+      border-color: color-mix(in srgb, var(--day-color) 40%, var(--line));
+    }
+
+    .day-route {
+      display: none;
+      margin-top: 14px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface-2);
+    }
+
+    .day-route.is-open {
+      display: block;
+    }
+
+    .route-chain {
+      display: grid;
+      gap: 0;
+    }
+
+    .route-stop {
+      position: relative;
+      display: grid;
+      grid-template-columns: 24px minmax(0, 1fr);
+      gap: 10px;
+      min-height: 38px;
+    }
+
+    .route-stop::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      bottom: -2px;
+      left: 7px;
+      width: 2px;
+      background: color-mix(in srgb, var(--day-color) 50%, var(--line));
+    }
+
+    .route-stop:last-child::before {
+      display: none;
+    }
+
+    .route-stop-dot {
+      position: relative;
+      z-index: 1;
+      width: 16px;
+      height: 16px;
+      margin-top: 2px;
+      border: 3px solid var(--surface-2);
+      border-radius: 50%;
+      background: var(--day-color);
+      box-shadow: 0 0 0 1px var(--day-color);
+    }
+
+    .route-stop-text {
+      padding-bottom: 12px;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .route-stop-text small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .timeline {
+      margin-top: 18px;
+    }
+
+    .timeline-row {
+      display: grid;
+      grid-template-columns: 88px minmax(0, 1fr);
+      gap: 14px;
+      padding: 13px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .timeline-row:first-child {
+      border-top: 0;
+    }
+
+    .time-cell {
+      color: var(--day-color);
+      font-size: 14px;
+      font-variant-numeric: tabular-nums;
+      font-weight: 850;
+      line-height: 1.3;
+    }
+
+    .time-cell small {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    .event-title {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .event-note {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .place-link {
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration: underline;
+      text-decoration-color: color-mix(in srgb, var(--day-color) 70%, transparent);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    .place-link:hover,
+    .place-link:focus-visible {
+      color: var(--day-color);
+      outline: none;
+    }
+
+    .ticket-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-left: 6px;
+      padding: 2px 6px;
+      border-radius: 999px;
+      background: var(--focus-soft);
+      color: var(--focus);
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+      vertical-align: 1px;
+    }
+
+    .todo-list {
+      display: grid;
+      gap: 0;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: todo;
+    }
+
+    .todo-list li {
+      position: relative;
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr);
+      gap: 12px;
+      padding: 15px 0;
+      border-top: 1px solid var(--line);
+      counter-increment: todo;
+    }
+
+    .todo-list li:first-child {
+      border-top: 0;
+    }
+
+    .todo-list li::before {
+      content: counter(todo, decimal-leading-zero);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .06em;
+    }
+
+    .todo-list strong {
+      display: block;
+      font-size: 15px;
+    }
+
+    .todo-list span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 13px;
+    }
+
+    .tip-card {
+      padding: 18px;
+    }
+
+    .tip-card h3 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+
+    .tip-card h3 svg {
+      width: 18px;
+      height: 18px;
+      color: var(--accent);
+      flex: 0 0 auto;
+    }
+
+    .tip-card ul {
+      margin: 0;
+      padding-left: 19px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .tip-card li + li {
+      margin-top: 7px;
+    }
+
+    .site-footer {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 24px 0 46px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .site-footer p {
+      margin: 0;
+    }
+
+    .noscript {
+      margin: 24px auto;
+      max-width: 900px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    @media (max-width: 900px) {
+      .route-map-wrap,
+      .confirmed-grid,
+      .charging-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .overview-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .map-panel {
+        min-height: 0;
+      }
+    }
+
+    @media (max-width: 680px) {
+      html {
+        scroll-padding-top: 76px;
+      }
+
+      .header-inner,
+      main,
+      .nav-track,
+      .site-footer {
+        width: min(100% - 22px, 1120px);
+      }
+
+      .header-inner {
+        padding: 27px 0 24px;
+      }
+
+      .section-head {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        margin-top: 36px;
+      }
+
+      .section-index {
+        order: -1;
+      }
+
+      .focus-card {
+        padding: 20px 14px 18px;
+      }
+
+      .focus-card::after {
+        display: none;
+      }
+
+      .focus-title {
+        margin-top: 22px;
+      }
+
+      .countdown {
+        gap: 6px;
+      }
+
+      .count-unit {
+        padding: 11px 4px 10px;
+      }
+
+      .count-value {
+        font-size: clamp(27px, 12vw, 42px);
+      }
+
+      .count-label {
+        font-size: 11px;
+      }
+
+      .map-panel {
+        padding: 4px;
+      }
+
+      .route-node text {
+        font-size: 20px;
+      }
+
+      .route-node .small-label {
+        font-size: 15px;
+      }
+
+      .overview-stat {
+        padding: 12px;
+      }
+
+      .overview-stat strong {
+        font-size: 15px;
+      }
+
+      .day-summary {
+        grid-template-columns: 54px minmax(0, 1fr) 30px;
+        gap: 9px;
+        padding: 15px 13px;
+      }
+
+      .day-summary-text h3 {
+        font-size: 16px;
+      }
+
+      .day-summary-text p {
+        font-size: 12px;
+      }
+
+      .summary-arrow {
+        width: 30px;
+        height: 30px;
+      }
+
+      .day-body {
+        padding: 0 13px 16px;
+      }
+
+      .timeline-row {
+        grid-template-columns: 66px minmax(0, 1fr);
+        gap: 10px;
+      }
+
+      .time-cell {
+        font-size: 13px;
+      }
+
+      .tips-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .route-action {
+        flex: 1 1 140px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="eyebrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+        2026 国庆自驾
+      </span>
+      <h1>安徽山水七日旅行手册</h1>
+      <p class="hero-copy">济南出发，经合肥、天柱山、牯牛降、池州、西溪南、黄山与淮北。所有时间以北京时间 UTC+8 为准，倒计时按绝对时间计算，跨时区打开也不会误差。</p>
+      <div class="header-meta">
+        <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>10月1日 - 10月7日</span>
+        <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 17h2a1 1 0 0 0 1-1v-3a2 2 0 0 0-1.3-1.9L17 9.5 15.2 5.4A2 2 0 0 0 13.4 4H8.6a2 2 0 0 0-1.8 1.4L5 9.5l-3.5 1.6A2 2 0 0 0 0 13v3a1 1 0 0 0 1 1h2"/><circle cx="6" cy="17" r="2"/><circle cx="18" cy="17" r="2"/></svg>Tesla Model 3</span>
+        <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>全程约 2470 km</span>
+        <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg>2 人</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="section-nav" aria-label="页面导航">
+    <div class="nav-track">
+      <a class="nav-link" href="#focus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>此刻</a>
+      <a class="nav-link" href="#map"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6z"/><path d="M9 3v15M15 6v15"/></svg>总览</a>
+      <a class="nav-link" href="#confirmed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 7 9 18l-5-5"/></svg>已确认</a>
+      <a class="nav-link" href="#charging"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>补电</a>
+      <a class="nav-link" href="#days"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18"/><path d="M5 4h14a2 2 0 0 1 2 2v14H3V6a2 2 0 0 1 2-2z"/></svg>逐日</a>
+      <a class="nav-link" href="#todo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>待办</a>
+      <a class="nav-link" href="#tips"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18h6M10 22h4"/><path d="M8.5 14.5A6 6 0 1 1 15.5 14.5C14.5 15.3 14 16 14 18h-4c0-2-.5-2.7-1.5-3.5z"/></svg>贴士</a>
+    </div>
+  </nav>
+
+  <main>
+    <noscript>
+      <div class="noscript">本页需要浏览器允许 JavaScript 才能显示逐日行程、地图和倒计时。页面本身完全离线可读，数据没有发送到外部服务。</div>
+    </noscript>
+
+    <section id="focus" aria-labelledby="focus-heading">
+      <div class="section-head">
+        <div>
+          <h2 id="focus-heading">此刻关注</h2>
+          <p>自动定位下一项行程事件，倒计时精确到秒。</p>
+        </div>
+        <span class="section-index">01 / Now</span>
+      </div>
+      <article class="focus-card">
+        <div class="focus-top">
+          <span class="status-pill" id="focus-status"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>下一项</span>
+          <span class="china-clock" id="china-clock">北京时间加载中</span>
+        </div>
+        <h2 class="focus-title" id="next-title">正在计算下一项行程</h2>
+        <p class="focus-meta" id="next-meta">全部时间以北京时间 UTC+8 显示。</p>
+        <div class="countdown" aria-label="倒计时">
+          <div class="count-unit"><span class="count-value" id="cd-days">0</span><span class="count-label">天</span></div>
+          <div class="count-unit"><span class="count-value" id="cd-hours">0</span><span class="count-label">小时</span></div>
+          <div class="count-unit"><span class="count-value" id="cd-minutes">0</span><span class="count-label">分钟</span></div>
+          <div class="count-unit"><span class="count-value" id="cd-seconds">0</span><span class="count-label">秒</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="map" aria-labelledby="map-heading">
+      <div class="section-head">
+        <div>
+          <h2 id="map-heading">行程总览地图</h2>
+          <p>手绘示意路线，按天区分颜色。点击地点可直接打开百度地图导航。</p>
+        </div>
+        <span class="section-index">02 / Route</span>
+      </div>
+      <div class="route-map-wrap">
+        <div class="map-panel">
+          <svg id="overview-map" viewBox="0 0 760 820" role="img" aria-label="安徽七日自驾路线示意地图">
+            <defs>
+              <filter id="roughStroke" x="-10%" y="-10%" width="120%" height="120%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="4" result="noise"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+              </filter>
+            </defs>
+            <path d="M90 90C180 105 230 145 280 220C340 305 405 345 482 385C545 418 605 465 634 542C660 616 626 690 548 734" fill="none" stroke="var(--line)" stroke-width="2" stroke-dasharray="5 9" opacity=".45"/>
+            <text x="54" y="58" fill="var(--muted)" font-size="15" font-weight="750">安徽方向示意</text>
+            <g id="map-routes" filter="url(#roughStroke)"></g>
+            <g id="map-nodes"></g>
+          </svg>
+        </div>
+        <aside class="map-legend">
+          <h3>按天路线</h3>
+          <ul class="legend-list" id="map-legend"></ul>
+          <p class="map-note">示意图不代表精确比例。红色环线为 10月5日黄山上下山路线；住宿节点以床形标记。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="confirmed" aria-labelledby="confirmed-heading">
+      <div class="section-head">
+        <div>
+          <h2 id="confirmed-heading">已确认信息</h2>
+          <p>只展示公开必要信息，不包含确认号、证件号、房间号或订单二维码。</p>
+        </div>
+        <span class="section-index">03 / Booked</span>
+      </div>
+      <div class="confirmed-grid">
+        <div class="overview-strip">
+          <div class="overview-stat"><span>交通</span><strong>Tesla Model 3 自驾</strong></div>
+          <div class="overview-stat"><span>住宿</span><strong>5 处 / 6 晚</strong></div>
+          <div class="overview-stat"><span>票务</span><strong>4 组景区已购</strong></div>
+          <div class="overview-stat"><span>长距离驾驶</span><strong>10月1日、10月6日</strong></div>
+        </div>
+
+        <article class="panel" aria-labelledby="vehicle-heading">
+          <div class="panel-title-row">
+            <h3 id="vehicle-heading">交通与车辆</h3>
+            <span class="status-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>已确认</span>
+          </div>
+          <div class="card-lines">
+            <p><strong>车型：</strong>Tesla Model 3，2 人自驾</p>
+            <p><strong>起终点：</strong>济南满电出发，10月7日返回济南</p>
+            <p><strong>重要提示：</strong>国庆高速免费时段为 10月1日 00:00 至 10月7日 24:00（北京时间 UTC+8），以驶离高速出口时间为准。</p>
+            <p><strong>补电原则：</strong>实际续航按约 500 km 估算，单段补电间隔控制在 300 km 内；尽量在余电 20% 前补电。服务区排队超过 15 分钟，立即下高速去目的地酒店桩、城市超充或大型商场桩。</p>
+          </div>
+        </article>
+
+        <article class="panel" aria-labelledby="hotel-heading">
+          <div class="panel-title-row">
+            <h3 id="hotel-heading">住宿</h3>
+            <span class="status-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>已预订</span>
+          </div>
+          <div class="hotel-list" id="hotel-list"></div>
+        </article>
+
+        <article class="panel" aria-labelledby="ticket-heading" style="grid-column: 1 / -1;">
+          <div class="panel-title-row">
+            <h3 id="ticket-heading">景区门票 / 索道 / 景交</h3>
+            <span class="status-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>已出票</span>
+          </div>
+          <div class="ticket-list" id="ticket-list"></div>
+        </article>
+
+        <article class="panel" id="charging" aria-labelledby="charging-heading" style="grid-column: 1 / -1;">
+          <div class="panel-title-row">
+            <h3 id="charging-heading">电车补电方案</h3>
+            <span class="status-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>按实际续航约 500 km</span>
+          </div>
+          <div class="charging-rules">
+            <span class="charging-rule">单段控制在 300 km 内</span>
+            <span class="charging-rule">余电 20% 前触发补电</span>
+            <span class="charging-rule">服务区排队超过 15 分钟立即下高速</span>
+            <span class="charging-rule">酒店目的地桩优先于高速服务区</span>
+          </div>
+          <div class="charging-grid" id="charging-list"></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="days" aria-labelledby="days-heading">
+      <div class="section-head">
+        <div>
+          <h2 id="days-heading">逐日行程</h2>
+          <p>点击每一天展开详细时间线；每天顶部可展开路线示意，并一键打开全天多点导航。</p>
+        </div>
+        <span class="section-index">04 / Daily</span>
+      </div>
+      <div class="day-list" id="day-list"></div>
+    </section>
+
+    <section id="todo" aria-labelledby="todo-heading">
+      <div class="section-head">
+        <div>
+          <h2 id="todo-heading">待办清单</h2>
+          <p>这是固定说明列表，不做浏览器勾选框。办完后告诉维护者，由页面统一更新。</p>
+        </div>
+        <span class="section-index">05 / To do</span>
+      </div>
+      <article class="panel">
+        <ul class="todo-list" id="todo-list"></ul>
+      </article>
+    </section>
+
+    <section id="tips" aria-labelledby="tips-heading">
+      <div class="section-head">
+        <div>
+          <h2 id="tips-heading">实用贴士</h2>
+          <p>国庆高峰的排队、补电、山区天气与票务使用要点。</p>
+        </div>
+        <span class="section-index">06 / Tips</span>
+      </div>
+      <div class="tips-grid" id="tips-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>公开页仅保留必要行程信息。酒店电话来自公开预订页面，使用前建议在订单页再次确认。地图导航以百度地图为默认，Google Maps 作为备用入口。</p>
+  </footer>
+
+  <script>
+    const TRIP = {
+      year: 2026,
+      days: [
+        {
+          id: "d1",
+          day: "DAY 01",
+          date: "10月1日 周四",
+          title: "济南 → 合肥",
+          subtitle: "长途赶路，约 640 km",
+          color: "#2f6fb0",
+          stay: "合肥肥西",
+          summary: "满电早出发，两段补电，傍晚抵达合肥。",
+          alerts: ["国庆首日上午京台高速流量最大，06:00 前出发。", "坚持余电 20% 前补电，不压着续航跑。"],
+          waypoints: ["济南", "徐州或宿州服务区", "合肥酒店"],
+          timeline: [
+            { time: "06:00", timezone: "UTC+8", at: "2026-10-01T06:00:00+08:00", title: "满电从济南出发", note: "按实际 500 km 续航估算，早餐车上解决，避开早高峰。", place: "济南" },
+            { time: "09:00", timezone: "UTC+8", at: "2026-10-01T09:00:00+08:00", title: "第一枪补电", note: "徐州或宿州服务区补至 80% 以上；排队超过 15 分钟就下高速到徐州东区或宿州市区商场桩。", place: "徐州或宿州服务区" },
+            { time: "12:30", timezone: "UTC+8", at: "2026-10-01T12:30:00+08:00", title: "午餐 + 第二枪补电", note: "蚌埠或合肥附近补至 80%，与午餐合并；备选蚌埠万达、吾悦或合肥城市超充。", place: "蚌埠" },
+            { time: "16:30", timezone: "UTC+8", at: "2026-10-01T16:30:00+08:00", title: "入住合肥酒店并补电", place: "欢寓里 Happylnn 智能轻居酒店 合肥", note: "若无目的地桩，到合肥滨湖、政务区或大型商场公共站补电，晚上不要再安排长途移动。" },
+            { time: "20:00", timezone: "UTC+8", at: "2026-10-01T20:00:00+08:00", title: "回房休息", note: "为第二天天柱山保留体力。" }
+          ]
+        },
+        {
+          id: "d2",
+          day: "DAY 02",
+          date: "10月2日 周五",
+          title: "合肥 → 天柱山",
+          subtitle: "西进东出穿行，宿潜山",
+          color: "#278b78",
+          stay: "安庆潜山",
+          summary: "大龙窝索道上山，龙潭河索道下山，景交返回大龙窝。",
+          alerts: ["门票、索道、大巴均已在 10月2日 生效。", "东关段台阶多，最晚 17:00 前抵达龙潭河索道站。"],
+          waypoints: ["合肥酒店", "天柱山大龙窝游客中心", "大龙窝索道", "天池峰", "龙潭河索道", "大龙窝游客中心", "潜山酒店"],
+          timeline: [
+            { time: "06:00", timezone: "UTC+8", at: "2026-10-02T06:00:00+08:00", title: "合肥出发", note: "电量 90% 以上，约 170 km 前往大龙窝游客中心。", place: "合肥" },
+            { time: "08:30", timezone: "UTC+8", at: "2026-10-02T08:30:00+08:00", title: "抵达大龙窝游客中心", note: "停车、验票，乘景区公交至大龙窝索道下站。", place: "天柱山大龙窝游客中心", ticket: "门票+景交" },
+            { time: "09:00", timezone: "UTC+8", at: "2026-10-02T09:00:00+08:00", title: "大龙窝索道上山", note: "索道运行至 17:30，按现场广播为准。", place: "天柱山大龙窝索道", ticket: "索道上行" },
+            { time: "09:30", timezone: "UTC+8", at: "2026-10-02T09:30:00+08:00", title: "西关精华段", note: "象鼻石 → 皖公神相 → 神秘谷 → 天池峰。", place: "天柱山神秘谷" },
+            { time: "12:00", timezone: "UTC+8", at: "2026-10-02T12:00:00+08:00", title: "天池峰附近简餐", note: "自带干粮更稳，补水并拉伸。", place: "天柱山天池峰" },
+            { time: "13:00", timezone: "UTC+8", at: "2026-10-02T13:00:00+08:00", title: "东关段", note: "蓬莱峰 → 青龙背 → 莲花峰 → 炼丹湖 → 回音台 → 大天门 → 天狮峰 → 鹊桥。", place: "天柱山青龙背" },
+            { time: "17:00", timezone: "UTC+8", at: "2026-10-02T17:00:00+08:00", title: "龙潭河索道下山", place: "天柱山龙潭河索道", note: "末班时间以现场广播为准，尽量提前排队。", ticket: "索道下行" },
+            { time: "19:00", timezone: "UTC+8", at: "2026-10-02T19:00:00+08:00", title: "回潜山酒店并补电", place: "悦荷·百亩荷塘亲子度假民宿", note: "优先酒店目的地桩；无桩时去潜山市区公共站补至 80% 以上，晚餐后尽早休息。" }
+          ]
+        },
+        {
+          id: "d3",
+          day: "DAY 03",
+          date: "10月3日 周六",
+          title: "天柱山 → 牯牛降 → 池州",
+          subtitle: "上午山野，晚间九华天池·仙镇",
+          color: "#bd7a1d",
+          stay: "池州",
+          summary: "牯牛降按龙门环线游玩，下午转场池州，晚间看仙镇夜景。",
+          alerts: ["牯牛降票有效至 10月5日，当日按 08:00-17:00 入园。", "九华天池·仙镇换票时间为 17:00-20:00，建议 17:15 前到达。"],
+          waypoints: ["潜山酒店", "牯牛降游客服务中心", "龙门换乘中心", "池州酒店", "九华天池·仙镇", "池州酒店"],
+          timeline: [
+            { time: "07:30", timezone: "UTC+8", at: "2026-10-03T07:30:00+08:00", title: "天柱山出发", note: "直接导航石台牯牛降游客服务中心，约 95-110 km。", place: "牯牛降游客服务中心" },
+            { time: "09:00", timezone: "UTC+8", at: "2026-10-03T09:00:00+08:00", title: "抵达牯牛降游客中心", note: "停车、验票，乘景交至龙门换乘中心。", place: "牯牛降龙门换乘中心", ticket: "门票+景交" },
+            { time: "09:30", timezone: "UTC+8", at: "2026-10-03T09:30:00+08:00", title: "龙门环线", note: "龙门潭 → 中流砥柱 → 严家古村 → 四叠瀑布，约 2.5-3 小时。", place: "石台牯牛降" },
+            { time: "12:30", timezone: "UTC+8", at: "2026-10-03T12:30:00+08:00", title: "石台附近午餐", note: "秋浦河鱼或农家菜，尽量 13:30 前结束。", place: "石台县" },
+            { time: "15:30", timezone: "UTC+8", at: "2026-10-03T15:30:00+08:00", title: "入住池州酒店", note: "办理入住、补电至 80% 以上并休整；酒店无桩时去池州主城区公共快充，剩余时间可短停平天湖。", place: "池州碧桂园凤悦凤凰酒店（九华山）" },
+            { time: "17:45", timezone: "UTC+8", at: "2026-10-03T17:45:00+08:00", title: "九华天池·仙镇换票入园", note: "换票窗口 17:00-20:00，先逛傩戏非遗街区和小吃街。", place: "九华天池·仙镇", ticket: "门票+竹排+夜场演艺" },
+            { time: "19:30", timezone: "UTC+8", at: "2026-10-03T19:30:00+08:00", title: "仙镇亮灯与夜景", note: "建议先确认演艺与竹排场次，再安排拍照顺序。", place: "九华天池·仙镇" },
+            { time: "21:00", timezone: "UTC+8", at: "2026-10-03T21:00:00+08:00", title: "返回池州酒店", note: "约 20-25 km，避免疲劳驾驶。" }
+          ]
+        },
+        {
+          id: "d4",
+          day: "DAY 04",
+          date: "10月4日 周日",
+          title: "池州 → 西溪南 → 黄山汤口",
+          subtitle: "白天古村，傍晚转场，为黄山做准备",
+          color: "#77569a",
+          stay: "黄山汤口",
+          summary: "西溪南慢逛后进汤口入住，车辆补至 100%。",
+          alerts: ["西溪南免费开放，无需预约。", "10月4日与10月5日连续住同一家汤口民宿。"],
+          waypoints: ["池州酒店", "西溪南古村落", "清鑫雅居民宿"],
+          timeline: [
+            { time: "08:00", timezone: "UTC+8", at: "2026-10-04T08:00:00+08:00", title: "池州出发", note: "电量 90% 以上，前往西溪南约 160-180 km。", place: "池州" },
+            { time: "11:30", timezone: "UTC+8", at: "2026-10-04T11:30:00+08:00", title: "抵达西溪南", note: "枫杨林、老屋阁、绿绕亭和古村巷弄，村内简餐。", place: "西溪南古村落" },
+            { time: "16:00", timezone: "UTC+8", at: "2026-10-04T16:00:00+08:00", title: "前往黄山汤口", note: "约 50-60 km，尽量 17:30 前抵达。", place: "黄山汤口" },
+            { time: "17:00", timezone: "UTC+8", at: "2026-10-04T17:00:00+08:00", title: "入住清鑫雅居民宿", note: "先确认目的地桩或 220V 慢充，车辆补至 100%；无桩时使用汤口镇公共站，确认次日黄山门票与身份证。", place: "清鑫雅居民宿" },
+            { time: "18:30", timezone: "UTC+8", at: "2026-10-04T18:30:00+08:00", title: "汤口晚餐", note: "臭鳜鱼、笋干烧肉、石耳炖鸡等，早回酒店休息。", place: "黄山汤口" }
+          ]
+        },
+        {
+          id: "d5",
+          day: "DAY 05",
+          date: "10月5日 周一",
+          title: "黄山全天",
+          subtitle: "云谷上，玉屏下，继续宿汤口",
+          color: "#bc4c43",
+          stay: "黄山汤口",
+          summary: "最早时段进山，云谷索道上，玉屏索道下，完成后回同一民宿。",
+          alerts: ["黄山实行强实名分时预约，现场不售当日票。", "06:00 前到南大门换乘中心，出发前再次确认官方开放与索道公告。"],
+          waypoints: ["清鑫雅居民宿", "南大门换乘中心", "云谷寺", "始信峰", "光明顶", "迎客松", "玉屏楼", "慈光阁", "清鑫雅居民宿"],
+          timeline: [
+            { time: "05:30", timezone: "UTC+8", at: "2026-10-05T05:30:00+08:00", title: "起床、早餐", note: "带好身份证、雨衣、热水和干粮。", place: "清鑫雅居民宿" },
+            { time: "06:00", timezone: "UTC+8", at: "2026-10-05T06:00:00+08:00", title: "南大门换乘中心", note: "私家车不能进山，按现场指引乘景交。", place: "黄山南大门换乘中心", ticket: "上行景交" },
+            { time: "07:00", timezone: "UTC+8", at: "2026-10-05T07:00:00+08:00", title: "云谷索道上山", place: "黄山云谷索道", ticket: "云谷上行" },
+            { time: "07:30", timezone: "UTC+8", at: "2026-10-05T07:30:00+08:00", title: "北海景区", note: "始信峰 → 北海 → 梦笔生花，视天气增加猴子观海。", place: "黄山始信峰" },
+            { time: "11:00", timezone: "UTC+8", at: "2026-10-05T11:00:00+08:00", title: "向光明顶方向移动", note: "午餐自带，避开山顶餐厅高峰。", place: "黄山光明顶" },
+            { time: "12:30", timezone: "UTC+8", at: "2026-10-05T12:30:00+08:00", title: "迎客松与玉屏楼", note: "海心亭 → 迎客松 → 玉屏楼，是当天核心拍照段。", place: "黄山迎客松" },
+            { time: "15:00", timezone: "UTC+8", at: "2026-10-05T15:00:00+08:00", title: "玉屏索道下山", note: "下山后乘景交返回南大门。", place: "黄山玉屏索道", ticket: "玉屏下行+下行景交" },
+            { time: "17:00", timezone: "UTC+8", at: "2026-10-05T17:00:00+08:00", title: "返回清鑫雅居民宿", note: "继续住同一家，取车后无需转移住宿。", place: "清鑫雅居民宿" }
+          ]
+        },
+        {
+          id: "d6",
+          day: "DAY 06",
+          date: "10月6日 周二",
+          title: "黄山汤口 → 淮北",
+          subtitle: "返程长途，纯驾驶约 551 km",
+          color: "#287ea3",
+          stay: "淮北",
+          summary: "清晨出发，两次补电，傍晚抵达淮北。",
+          alerts: ["当天纯驾驶约 551 km，叠加补电和返程车流预计 10 小时左右。", "07:30 前出发，午餐与补电合并。"],
+          waypoints: ["清鑫雅居民宿", "合肥附近服务区", "蚌埠或宿州服务区", "无眠酒店（淮北市政府店）"],
+          timeline: [
+            { time: "07:30", timezone: "UTC+8", at: "2026-10-06T07:30:00+08:00", title: "汤口出发", note: "电量 100%，全程按 500 km 实际续航计算，第一枪不拖到 200 km 以下。", place: "黄山汤口" },
+            { time: "12:00", timezone: "UTC+8", at: "2026-10-06T12:00:00+08:00", title: "合肥附近补电 + 午餐", note: "补至 80%-90%；服务区排队就下高速到合肥政务区、滨湖或大型商场地下充电站。", place: "合肥" },
+            { time: "16:30", timezone: "UTC+8", at: "2026-10-06T16:30:00+08:00", title: "蚌埠或宿州附近补电", note: "第二枪补至 70%-80%。备选蚌埠万达/吾悦、宿州万达或市区公共快充，两人轮换驾驶。", place: "蚌埠或宿州服务区" },
+            { time: "19:00", timezone: "UTC+8", at: "2026-10-06T19:00:00+08:00", title: "入住淮北酒店", note: "车辆夜间补至 90% 以上，晚餐可就近解决。", place: "无眠酒店 淮北市政府店" }
+          ]
+        },
+        {
+          id: "d7",
+          day: "DAY 07",
+          date: "10月7日 周三",
+          title: "淮北 → 济南",
+          subtitle: "返家，约 370 km",
+          color: "#5c8b3b",
+          stay: "济南",
+          summary: "轻松返程，不卡高速免费截止点。",
+          alerts: ["国庆高速免费以 10月7日 24:00 前驶离出口为准。", "建议 16:00 前到济南，给返程车流留余量。"],
+          waypoints: ["无眠酒店（淮北市政府店）", "徐州方向服务区", "济南"],
+          timeline: [
+            { time: "07:30", timezone: "UTC+8", at: "2026-10-07T07:30:00+08:00", title: "淮北出发", note: "电量 90% 以上，后备箱物品固定好。", place: "淮北" },
+            { time: "12:30", timezone: "UTC+8", at: "2026-10-07T12:30:00+08:00", title: "午餐", note: "徐州方向视余电补 20-30 分钟，不追求满电；逆风、降雨时提前补。", place: "徐州" },
+            { time: "16:00", timezone: "UTC+8", at: "2026-10-07T16:00:00+08:00", title: "抵达济南", note: "行程结束。", place: "济南" }
+          ]
+        }
+      ],
+      hotels: [
+        {
+          date: "10月1日",
+          label: "1 晚",
+          name: "欢寓里·Happylnn·智能轻居酒店（香樟大道太平洋森活广场店）",
+          address: "合肥市肥西县柏堰社区香樟大道与明珠大道交口东北角太平洋森活广场",
+          checkin: "10月1日 14:00 后",
+          checkout: "10月2日 12:00 前",
+          phone: "",
+          note: "靠近合肥西侧，次日去潜山更顺路。"
+        },
+        {
+          date: "10月2日",
+          label: "1 晚",
+          name: "悦荷·百亩荷塘亲子度假民宿",
+          address: "安庆潜山市潘铺中学北侧约 70 米",
+          checkin: "10月2日 04:00 后",
+          checkout: "10月3日 14:00 前",
+          phone: "0556-8686678",
+          note: "含早餐；山地骑行和亲子乐园权益以酒店实际安排为准。"
+        },
+        {
+          date: "10月3日",
+          label: "1 晚",
+          name: "池州碧桂园凤悦凤凰酒店（九华山）",
+          address: "池州市贵池区齐山大道齐山风景区西侧",
+          checkin: "10月3日 10:00 后",
+          checkout: "10月4日 14:00 前",
+          phone: "0566-5868888",
+          note: "前往九华天池和西溪南都较方便。"
+        },
+        {
+          date: "10月4日 - 10月5日",
+          label: "连续 2 晚",
+          name: "清鑫雅居民宿",
+          address: "黄山市黄山区汤口镇汤口·印象 4 号地块 11 幢 1 号",
+          checkin: "10月4日 14:00 后",
+          checkout: "10月6日 12:00 前",
+          phone: "18955942627",
+          note: "10月5日不住屯溪，黄山下山后继续回这里，次日从这里出发去淮北。"
+        },
+        {
+          date: "10月6日",
+          label: "1 晚",
+          name: "无眠酒店（淮北市政府店）",
+          address: "淮北市相山区孟山中路金百合 2#B 座商业楼 1 楼",
+          checkin: "10月6日 10:00 后",
+          checkout: "10月7日 14:00 前",
+          phone: "0561-5205666",
+          note: "返程中转，夜间充满电。"
+        }
+      ],
+      tickets: [
+        {
+          date: "10月2日",
+          venue: "天柱山",
+          color: "#278b78",
+          time: "游客中心 06:30-18:00；索道 07:00-17:30；大巴 07:00-18:30",
+          items: ["成人门票 ×2", "大龙窝索道上行 ×2", "龙潭河索道下行 ×2", "往返大巴 ×2"],
+          note: "西进东出：大龙窝索道上山，龙潭河索道下山，再乘景交回大龙窝游客中心。"
+        },
+        {
+          date: "10月3日",
+          venue: "石台牯牛降",
+          color: "#bd7a1d",
+          time: "有效日至 10月5日；入园 08:00-17:00",
+          items: ["成人门票 ×2", "游客中心至龙门景交往返 ×2"],
+          note: "上午按龙门环线走，建议 13:00 前完成游览。"
+        },
+        {
+          date: "10月3日",
+          venue: "九华天池·仙镇",
+          color: "#77569a",
+          time: "10月31日前有效；仙镇换票 17:00-20:00",
+          items: ["风景区票 ×2", "龙池竹排票 ×2", "仙镇夜场演艺票 ×2"],
+          note: "无需预约；建议 17:15 前抵达换票，晚上 19:30 左右看亮灯。"
+        },
+        {
+          date: "10月5日",
+          venue: "黄山",
+          color: "#bc4c43",
+          time: "按官方分时预约；建议 06:00 前到南大门换乘中心",
+          items: ["南大门门票 ×2", "云谷索道上行 ×2", "玉屏索道下行 ×2", "上行景交 ×2", "下行景交 ×2"],
+          note: "云谷上、玉屏下。当天 06:30 再看官方平台确认开放景点、索道和天气。"
+        }
+      ],
+      charging: [
+        {
+          day: "10月1日",
+          leg: "济南 → 合肥 · 约 640 km",
+          stops: [
+            ["约 09:00", "徐州或宿州服务区", "补至 80% 以上。排队超过 15 分钟，下高速去徐州东区或宿州市区的大型商场充电站，并在 Tesla App 与第三方充电 App 对比空位。"],
+            ["约 12:30", "蚌埠或合肥附近", "午餐与补电合并，补至 80%。备选：蚌埠万达、吾悦或合肥滨湖/政务区城市超充。"]
+          ]
+        },
+        {
+          day: "10月2日",
+          leg: "合肥 → 天柱山 · 约 170 km",
+          stops: [
+            ["06:00", "合肥出发前", "电量 90% 以上。当天路程短，不在服务区排队。"],
+            ["约 19:00", "潜山酒店或市区", "优先酒店目的地桩；酒店无桩时去潜山市区公共站补至 80% 以上。"]
+          ]
+        },
+        {
+          day: "10月3日",
+          leg: "天柱山 → 牯牛降 → 池州 · 约 240 km",
+          stops: [
+            ["07:30", "潜山出发前", "电量 90% 以上，景区内不安排补电。"],
+            ["约 15:30", "池州酒店或市区", "到酒店后补至 80% 以上。备选：池州主城区大型商场或城市公共超充。"]
+          ]
+        },
+        {
+          day: "10月4日",
+          leg: "池州 → 西溪南 → 汤口 · 约 240 km",
+          stops: [
+            ["08:00", "池州出发前", "电量 90% 以上，抵达汤口前不在高速服务区等待。"],
+            ["约 17:00", "汤口清鑫雅居民宿", "目标补至 100%。先向民宿确认目的地桩或 220V 慢充；无桩时使用汤口镇公共充电站。"]
+          ]
+        },
+        {
+          day: "10月5日",
+          leg: "黄山上下山 · 车辆基本不动",
+          stops: [
+            ["全天", "汤口停车与补电", "出发前保持 100%。如 10月4日晚无法充满，10月5日 05:30 前找到快充补到 80% 以上，不把补电拖到返程日。"]
+          ]
+        },
+        {
+          day: "10月6日",
+          leg: "汤口 → 淮北 · 约 551 km",
+          stops: [
+            ["约 12:00", "合肥附近", "第一枪补至 80%-90%，午餐同步。服务区排队时切到合肥政务区、滨湖或大型商场地下充电站。"],
+            ["约 16:30", "蚌埠或宿州附近", "第二枪补至 70%-80%。备选：蚌埠万达/吾悦、宿州万达或市区公共快充，避免在两个热门服务区同时等位。"],
+            ["19:00", "淮北酒店", "抵达后尽量补至 90% 以上，为 10月7日返济南做储备。"]
+          ]
+        },
+        {
+          day: "10月7日",
+          leg: "淮北 → 济南 · 约 370 km",
+          stops: [
+            ["07:30", "淮北出发前", "电量 90% 以上，正常情况一枪到底。"],
+            ["可选", "徐州方向", "如余电不足或逆风、降雨，在服务区或徐州市区补 20-30 分钟再继续。"]
+          ]
+        }
+      ],
+      todos: [
+        ["出发前 3 天检查车辆", "胎压、轮胎、刹车、灯光、雨刷、空调和随车工具。"],
+        ["Tesla App 完成 500 km 实际续航模拟", "按 300 km 单段上限收藏合肥、潜山、池州、黄山汤口、淮北沿途站点。"],
+        ["逐站标记下高速补电备选", "徐州/宿州、蚌埠、合肥、池州、汤口各准备至少 1 个大型商场或城市公共快充。"],
+        ["下载离线地图与订单资料", "高德或百度离线地图，门票和酒店订单存入手机相册。"],
+        ["确认黄山入园时段与预约码", "出发前从官方平台核对 10月5日预约时段、索道开放和身份证信息。"],
+        ["确认 10月4日与 10月5日连住", "与清鑫雅居民宿确认连续两晚已衔接，无法确认时立即联系酒店。"],
+        ["核对天柱山索道与景交票", "确认大龙窝上行、龙潭河下行和往返大巴均可在 10月2日使用。"],
+        ["九华天池·仙镇提前确认换票窗口", "10月3日 17:15 前到达，先确认竹排、演艺场次和夜场时间。"],
+        ["黄山汤口补电至 100%", "10月4日入住后完成充电，10月5日车辆留在住宿点附近。"],
+        ["每天 06:30 查看景区公告", "重点关注黄山索道、天柱山天气和国庆交通管制。"],
+        ["10月6日 07:30 前从汤口出发", "当天长途约 551 km，严禁拖到中午再出发。"]
+      ],
+      tips: [
+        {
+          title: "时间与时区",
+          icon: "clock",
+          items: [
+            "页面所有行程时间均为北京时间 UTC+8，倒计时基于绝对时间。",
+            "跨时区设备打开时，行程文字仍按北京时间显示，剩余时间不会算错。",
+            "国庆出行以现场检票、索道和交通管制公告为准。"
+          ]
+        },
+        {
+          title: "门票与预约",
+          icon: "ticket",
+          items: [
+            "天柱山、牯牛降、九华天池·仙镇和黄山核心票务已购买。",
+            "九华天池·仙镇需在 17:00-20:00 换票，页面按 17:15 前到达预留时间。",
+            "平天湖和西溪南免费开放，无需预约。",
+            "公开页不展示确认号、证件号、房间号和二维码编号。"
+          ]
+        },
+        {
+          title: "自驾与补电",
+          icon: "car",
+          items: [
+            "按实际约 500 km 续航估算，把充电站之间的单段距离控制在 300 km 内，并保留 20% 安全余量。",
+            "服务区排队超过 15 分钟就下高速，优先酒店目的地桩、Tesla 城市超充、万达/吾悦或大型商场地下快充。",
+            "10月1日、10月6日各安排两次补电；10月4日到汤口后必须补至 100%。",
+            "午餐尽量与补电合并，减少重复停车。",
+            "10月1日和 10月6日是最长驾驶日，两人轮换，避免疲劳驾驶。",
+            "山路和景区道路减速慢行，晚间不赶山路。"
+          ]
+        },
+        {
+          title: "天气与装备",
+          icon: "weather",
+          items: [
+            "皖南白天约 20-26℃，早晚约 14-18℃，黄山山顶通常低 10℃ 以上。",
+            "带防滑登山鞋、冲锋衣、薄羽绒或抓绒、雨衣、热水和干粮。",
+            "雷雨大风时索道可能临时停运，及时查看官方公告。",
+            "Plan B：黄山改翡翠谷或九龙瀑；天柱山雾大改山谷流泉文化园。"
+          ]
+        },
+        {
+          title: "导航与离线",
+          icon: "map",
+          items: [
+            "每个地点默认打开百度地图驾车导航，Google Maps 作为备用入口。",
+            "每天顶部可展开全天路线，并在高德、百度或 Tesla 车机中手动复现多点顺序。",
+            "山区部分路段信号不稳，出发前下载安徽离线地图。"
+          ]
+        },
+        {
+          title: "安全提醒",
+          icon: "shield",
+          items: [
+            "林区禁火，不携带火种进山。",
+            "雷雨时远离孤树、金属栏杆和悬崖。",
+            "证件、驾驶证、行驶证、ETC 和保险电子版全部带齐。",
+            "车上固定好行李，三角牌、灭火器、急救包和手电放在易取位置。"
+          ]
+        }
+      ]
+    };
+
+    const SVG_ICONS = {
+      clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+      ticket: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9a2 2 0 0 0 0 6v3h18v-3a2 2 0 0 1 0-6V6H3v3z"/><path d="M13 6v12"/></svg>',
+      car: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 17h2a1 1 0 0 0 1-1v-3a2 2 0 0 0-1.3-1.9L17 9.5 15.2 5.4A2 2 0 0 0 13.4 4H8.6a2 2 0 0 0-1.8 1.4L5 9.5l-3.5 1.6A2 2 0 0 0 0 13v3a1 1 0 0 0 1 1h2"/><circle cx="6" cy="17" r="2"/><circle cx="18" cy="17" r="2"/></svg>',
+      weather: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 10h-1.3A7 7 0 1 0 5 16h13a4 4 0 0 0 0-8z"/></svg>',
+      map: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6z"/><path d="M9 3v15M15 6v15"/></svg>',
+      shield: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>',
+      navigation: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>',
+      chevron: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>',
+      external: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>',
+      bed: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4v16M2 11h20v9M6 11V7h5a3 3 0 0 1 3 3v1"/><path d="M22 20v-9"/></svg>',
+      home: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/></svg>'
+    };
+
+    const MAP_NODES = {
+      jinan: { x: 596, y: 88, name: "济南", place: "济南" },
+      huaibei: { x: 214, y: 214, name: "淮北", place: "淮北" },
+      hefei: { x: 404, y: 376, name: "合肥", place: "合肥" },
+      tianzhu: { x: 250, y: 498, name: "天柱山", place: "天柱山大龙窝游客中心" },
+      guniu: { x: 355, y: 626, name: "牯牛降", place: "石台牯牛降游客服务中心" },
+      chizhou: { x: 474, y: 548, name: "池州", place: "池州" },
+      xixinan: { x: 646, y: 540, name: "西溪南", place: "西溪南古村落" },
+      tangkou: { x: 565, y: 650, name: "汤口", place: "清鑫雅居民宿" },
+      huangshan: { x: 656, y: 686, name: "黄山", place: "黄山南大门换乘中心" }
+    };
+
+    const MAP_ROUTES = [
+      { day: 1, color: "#2f6fb0", d: "M596 88 C530 138 500 214 472 284 C448 344 430 360 404 376" },
+      { day: 2, color: "#278b78", d: "M404 376 C358 390 310 432 278 474 C267 488 259 494 250 498" },
+      { day: 3, color: "#bd7a1d", d: "M250 498 C255 545 282 576 316 601 C335 615 345 621 355 626 C384 597 420 570 474 548" },
+      { day: 4, color: "#77569a", d: "M474 548 C522 518 575 505 619 518 C635 522 642 531 646 540 C626 560 598 587 580 615 C574 625 570 638 565 650" },
+      { day: 5, color: "#bc4c43", d: "M565 650 C598 661 630 674 656 686 C631 700 602 699 578 681 C570 675 566 664 565 650", dashed: true },
+      { day: 6, color: "#287ea3", d: "M565 650 C498 620 430 546 368 470 C314 404 274 294 214 214" },
+      { day: 7, color: "#5c8b3b", d: "M214 214 C330 154 470 94 596 88" }
+    ];
+
+    function escapeHTML(value) {
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function baiduSearchUrl(place) {
+      return "https://api.map.baidu.com/geocoder?address=" + encodeURIComponent(place) + "&output=html&src=webapp.anhui2026";
+    }
+
+    function baiduRouteUrl(waypoints) {
+      const clean = waypoints.filter(Boolean);
+      if (!clean.length) return "https://map.baidu.com/";
+      if (clean.length === 1) return baiduSearchUrl(clean[0]);
+      const origin = clean[0];
+      const destination = clean[clean.length - 1];
+      const middle = clean.slice(1, -1);
+      const params = [
+        ["origin", origin],
+        ["destination", destination],
+        ["mode", "driving"],
+        ["region", "全国"],
+        ["output", "html"],
+        ["src", "webapp.anhui2026"]
+      ];
+      if (middle.length) params.push(["waypoints", middle.join("|")]);
+      return "https://api.map.baidu.com/direction?" + params.map(([key, value]) => key + "=" + encodeURIComponent(value)).join("&");
+    }
+
+    function googleRouteUrl(waypoints) {
+      const clean = waypoints.filter(Boolean);
+      if (!clean.length) return "https://www.google.com/maps";
+      const origin = clean[0];
+      const destination = clean[clean.length - 1];
+      const middle = clean.slice(1, -1);
+      const params = [
+        ["api", "1"],
+        ["origin", origin],
+        ["destination", destination],
+        ["travelmode", "driving"],
+        ["dir_action", "navigate"]
+      ];
+      if (middle.length) params.push(["waypoints", middle.join("|")]);
+      return "https://www.google.com/maps/dir/?" + params.map(([key, value]) => key + "=" + encodeURIComponent(value)).join("&");
+    }
+
+    function googlePlaceUrl(place) {
+      return "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(place) + "&travelmode=driving&dir_action=navigate";
+    }
+
+    function renderMap() {
+      const routes = document.getElementById("map-routes");
+      const nodes = document.getElementById("map-nodes");
+      const legend = document.getElementById("map-legend");
+
+      routes.innerHTML = MAP_ROUTES.map(route =>
+        '<path class="route-line" d="' + route.d + '" stroke="' + route.color + '"' + (route.dashed ? ' stroke-dasharray="12 10"' : "") + '/>'
+      ).join("");
+
+      nodes.innerHTML = Object.entries(MAP_NODES).map(([id, node]) => {
+        const hotel = ["hefei", "tianzhu", "chizhou", "tangkou", "huaibei"].includes(id);
+        const labelY = node.name === "合肥" || node.name === "池州" ? -30 : 42;
+        const subY = labelY < 0 ? labelY - 22 : labelY + 21;
+        const sub = hotel ? "住宿" : (id === "tangkou" ? "住宿 / 黄山门户" : "");
+        return '<a class="route-node" href="' + baiduSearchUrl(node.place) + '" target="_blank" rel="noopener" aria-label="打开百度地图导航到' + escapeHTML(node.name) + '">' +
+          '<circle cx="' + node.x + '" cy="' + node.y + '" r="17" stroke="' + routeColorForNode(id) + '"/>' +
+          '<circle cx="' + node.x + '" cy="' + node.y + '" r="6" fill="' + routeColorForNode(id) + '"/>' +
+          '<text x="' + node.x + '" y="' + (node.y + labelY) + '" text-anchor="middle">' + escapeHTML(node.name) + '</text>' +
+          (sub ? '<text class="small-label" x="' + node.x + '" y="' + (node.y + subY) + '" text-anchor="middle">' + escapeHTML(sub) + '</text>' : "") +
+        '</a>';
+      }).join("");
+
+      legend.innerHTML = TRIP.days.map(day =>
+        '<li class="legend-item"><span class="legend-swatch" style="background:' + day.color + '"></span><span><strong>' + escapeHTML(day.date.replace(/ \S+$/, "")) + " · " + escapeHTML(day.title) + '</strong>' + escapeHTML(day.stay ? "宿 " + day.stay : day.subtitle) + '</span></li>'
+      ).join("");
+    }
+
+    function routeColorForNode(id) {
+      if (id === "jinan") return "#2f6fb0";
+      if (id === "huaibei") return "#287ea3";
+      if (id === "hefei") return "#2f6fb0";
+      if (id === "tianzhu") return "#278b78";
+      if (id === "guniu") return "#bd7a1d";
+      if (id === "chizhou") return "#bd7a1d";
+      if (id === "xixinan") return "#77569a";
+      if (id === "tangkou") return "#bc4c43";
+      if (id === "huangshan") return "#bc4c43";
+      return "#65706b";
+    }
+
+    function renderHotels() {
+      document.getElementById("hotel-list").innerHTML = TRIP.hotels.map(hotel => {
+        const phoneLine = hotel.phone
+          ? '<p><strong>电话：</strong><a class="place-link" href="tel:' + escapeHTML(hotel.phone.replace(/-/g, "")) + '">' + escapeHTML(hotel.phone) + '</a></p>'
+          : '<p><strong>电话：</strong>公开截图未显示号码，请从订单页“联系酒店”进入</p>';
+        return '<article class="hotel-card">' +
+          '<div class="card-kicker"><span>' + escapeHTML(hotel.date) + " · " + escapeHTML(hotel.label) + '</span><span class="status-pill">' + SVG_ICONS.bed + '已预订</span></div>' +
+          '<h4 class="card-title">' + escapeHTML(hotel.name) + '</h4>' +
+          '<div class="card-lines">' +
+            '<p><strong>地址：</strong>' + escapeHTML(hotel.address) + '</p>' +
+            '<p><strong>入住：</strong>' + escapeHTML(hotel.checkin) + '（UTC+8）</p>' +
+            '<p><strong>退房：</strong>' + escapeHTML(hotel.checkout) + '（UTC+8）</p>' +
+            phoneLine +
+            '<p><strong>提示：</strong>' + escapeHTML(hotel.note) + '</p>' +
+          '</div>' +
+          '<div class="card-actions">' +
+            '<a class="route-action" href="' + baiduSearchUrl(hotel.name + " " + hotel.address) + '" target="_blank" rel="noopener">' + SVG_ICONS.navigation + '百度导航</a>' +
+            '<a class="route-action" href="' + googlePlaceUrl(hotel.name + " " + hotel.address) + '" target="_blank" rel="noopener">' + SVG_ICONS.external + 'Google 备用</a>' +
+          '</div>' +
+        '</article>';
+      }).join("");
+    }
+
+    function renderTickets() {
+      document.getElementById("ticket-list").innerHTML = TRIP.tickets.map(ticket =>
+        '<article class="ticket-card" style="--ticket-color:' + ticket.color + '">' +
+          '<div class="card-kicker"><span>' + escapeHTML(ticket.date) + " · " + escapeHTML(ticket.venue) + '</span><span class="status-pill">已出票</span></div>' +
+          '<div class="card-lines">' +
+            '<p><strong>使用时间：</strong>' + escapeHTML(ticket.time) + '（北京时间 UTC+8）</p>' +
+            '<p><strong>提示：</strong>' + escapeHTML(ticket.note) + '</p>' +
+          '</div>' +
+          '<div class="ticket-items">' + ticket.items.map(item => '<span class="ticket-item">' + escapeHTML(item) + '</span>').join("") + '</div>' +
+          '<div class="card-actions"><a class="route-action" href="' + baiduSearchUrl(ticket.venue) + '" target="_blank" rel="noopener">' + SVG_ICONS.navigation + '打开景区位置</a></div>' +
+        '</article>'
+      ).join("");
+    }
+
+    function renderCharging() {
+      document.getElementById("charging-list").innerHTML = TRIP.charging.map(plan =>
+        '<article class="charge-card">' +
+          '<h4>' + escapeHTML(plan.day) + '</h4>' +
+          '<p class="leg">' + escapeHTML(plan.leg) + '</p>' +
+          plan.stops.map(([window, location, detail]) =>
+            '<div class="charge-stop">' +
+              '<div class="charge-window">' + escapeHTML(window) + '</div>' +
+              '<div class="charge-detail"><strong>' + escapeHTML(location) + '</strong><span>' + escapeHTML(detail) + '</span></div>' +
+            '</div>'
+          ).join("") +
+        '</article>'
+      ).join("");
+    }
+
+    function renderDays() {
+      document.getElementById("day-list").innerHTML = TRIP.days.map(day => {
+        const alerts = day.alerts.map(alert => '<span class="alert-chip">' + SVG_ICONS.navigation + escapeHTML(alert) + '</span>').join("");
+        const routeStops = day.waypoints.map(place =>
+          '<div class="route-stop"><span class="route-stop-dot"></span><div class="route-stop-text"><a class="place-link" href="' + baiduSearchUrl(place) + '" target="_blank" rel="noopener">' + escapeHTML(place) + '</a><small>点击打开百度地图</small></div></div>'
+        ).join("");
+        const timeline = day.timeline.map(item => {
+          const ticket = item.ticket ? '<span class="ticket-badge">已购 · ' + escapeHTML(item.ticket) + '</span>' : "";
+          const place = item.place ? '<a class="place-link" href="' + baiduSearchUrl(item.place) + '" target="_blank" rel="noopener">' + escapeHTML(item.title) + '</a>' : escapeHTML(item.title);
+          return '<div class="timeline-row" data-at="' + escapeHTML(item.at || "") + '">' +
+            '<div class="time-cell">' + escapeHTML(item.time) + '<small>' + escapeHTML(item.timezone || "UTC+8") + '</small></div>' +
+            '<div><p class="event-title">' + place + ticket + '</p><p class="event-note">' + escapeHTML(item.note || "") + '</p></div>' +
+          '</div>';
+        }).join("");
+
+        return '<details class="day-card" id="' + day.id + '" style="--day-color:' + day.color + '">' +
+          '<summary class="day-summary">' +
+            '<span class="day-number">' + escapeHTML(day.day) + '</span>' +
+            '<span class="day-summary-text"><h3>' + escapeHTML(day.date + " · " + day.title) + '</h3><p>' + escapeHTML(day.subtitle) + '</p></span>' +
+            '<span class="summary-arrow" aria-hidden="true">' + SVG_ICONS.chevron + '</span>' +
+          '</summary>' +
+          '<div class="day-body">' +
+            '<div class="day-alerts">' + alerts + '</div>' +
+            '<div class="day-toolbar">' +
+              '<button class="route-action route-expand" type="button" data-route-toggle="' + day.id + '">' + SVG_ICONS.map + '展开当日路线</button>' +
+              '<a class="route-action" href="' + baiduRouteUrl(day.waypoints) + '" target="_blank" rel="noopener">' + SVG_ICONS.navigation + '百度全天导航</a>' +
+              '<a class="route-action" href="' + googleRouteUrl(day.waypoints) + '" target="_blank" rel="noopener">' + SVG_ICONS.external + 'Google 备用</a>' +
+            '</div>' +
+            '<div class="day-route" id="route-' + day.id + '"><div class="route-chain">' + routeStops + '</div></div>' +
+            '<div class="timeline">' + timeline + '</div>' +
+          '</div>' +
+        '</details>';
+      }).join("");
+
+      document.querySelectorAll("[data-route-toggle]").forEach(button => {
+        button.addEventListener("click", () => {
+          const route = document.getElementById("route-" + button.dataset.routeToggle);
+          const isOpen = route.classList.toggle("is-open");
+          button.innerHTML = SVG_ICONS.map + (isOpen ? "收起当日路线" : "展开当日路线");
+        });
+      });
+    }
+
+    function renderTips() {
+      document.getElementById("tips-grid").innerHTML = TRIP.tips.map(tip =>
+        '<article class="tip-card"><h3>' + SVG_ICONS[tip.icon] + escapeHTML(tip.title) + '</h3><ul>' +
+          tip.items.map(item => '<li>' + escapeHTML(item) + '</li>').join("") +
+        '</ul></article>'
+      ).join("");
+    }
+
+    function renderTodos() {
+      document.getElementById("todo-list").innerHTML = TRIP.todos.map(([title, note]) =>
+        '<li><div><strong>' + escapeHTML(title) + '</strong><span>' + escapeHTML(note) + '</span></div></li>'
+      ).join("");
+    }
+
+    function formatChinaClock(date) {
+      const parts = new Intl.DateTimeFormat("zh-CN", {
+        timeZone: "Asia/Shanghai",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+      }).formatToParts(date);
+      const map = Object.fromEntries(parts.map(part => [part.type, part.value]));
+      return map.month + "月" + map.day + "日 " + map.hour + ":" + map.minute + ":" + map.second + " UTC+8";
+    }
+
+    function formatEventTime(date) {
+      const parts = new Intl.DateTimeFormat("zh-CN", {
+        timeZone: "Asia/Shanghai",
+        month: "long",
+        day: "numeric",
+        weekday: "short",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false
+      }).formatToParts(date);
+      const map = Object.fromEntries(parts.map(part => [part.type, part.value]));
+      return map.month + map.day + " " + map.weekday + " " + map.hour + ":" + map.minute + "（北京时间 UTC+8）";
+    }
+
+    function allEvents() {
+      return TRIP.days.flatMap(day =>
+        day.timeline
+          .filter(item => item.at)
+          .map(item => ({ ...item, day: day.date, dayTitle: day.title }))
+      ).sort((a, b) => new Date(a.at) - new Date(b.at));
+    }
+
+    const EVENTS = allEvents();
+
+    function updateCountdown() {
+      const now = new Date();
+      document.getElementById("china-clock").textContent = "北京时间 " + formatChinaClock(now);
+
+      const next = EVENTS.find(event => new Date(event.at).getTime() > now.getTime());
+      const title = document.getElementById("next-title");
+      const meta = document.getElementById("next-meta");
+      const status = document.getElementById("focus-status");
+
+      if (!next) {
+        title.textContent = "七日行程已经完成";
+        meta.textContent = "最后一项抵达时间已过。愿一路平安，返程顺利。";
+        status.innerHTML = SVG_ICONS.home + "已完成";
+        ["cd-days", "cd-hours", "cd-minutes", "cd-seconds"].forEach(id => document.getElementById(id).textContent = "0");
+        return;
+      }
+
+      const diff = Math.max(0, new Date(next.at).getTime() - now.getTime());
+      const days = Math.floor(diff / 86400000);
+      const hours = Math.floor((diff % 86400000) / 3600000);
+      const minutes = Math.floor((diff % 3600000) / 60000);
+      const seconds = Math.floor((diff % 60000) / 1000);
+
+      title.textContent = next.title;
+      meta.textContent = next.day + " · " + formatEventTime(new Date(next.at)) + (next.note ? " · " + next.note : "");
+      status.innerHTML = SVG_ICONS.clock + "下一项";
+      document.getElementById("cd-days").textContent = String(days);
+      document.getElementById("cd-hours").textContent = String(hours).padStart(2, "0");
+      document.getElementById("cd-minutes").textContent = String(minutes).padStart(2, "0");
+      document.getElementById("cd-seconds").textContent = String(seconds).padStart(2, "0");
+    }
+
+    function updateTheme() {
+      const hour = Number(new Intl.DateTimeFormat("en-US", {
+        timeZone: "Asia/Shanghai",
+        hour: "2-digit",
+        hour12: false
+      }).format(new Date()));
+      const isNight = hour < 6 || hour >= 18;
+      document.documentElement.dataset.theme = isNight ? "night" : "day";
+      document.querySelector('meta[name="theme-color"]').setAttribute("content", isNight ? "#101713" : "#f6f3eb");
+    }
+
+    function openRelevantDay() {
+      const chinaDate = new Intl.DateTimeFormat("en-CA", {
+        timeZone: "Asia/Shanghai",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      }).format(new Date());
+      const map = {
+        "2026-10-01": "d1",
+        "2026-10-02": "d2",
+        "2026-10-03": "d3",
+        "2026-10-04": "d4",
+        "2026-10-05": "d5",
+        "2026-10-06": "d6",
+        "2026-10-07": "d7"
+      };
+      const id = map[chinaDate] || "d1";
+      const day = document.getElementById(id);
+      if (day) {
+        day.open = true;
+        const route = document.getElementById("route-" + id);
+        if (route) route.classList.add("is-open");
+        const button = document.querySelector('[data-route-toggle="' + id + '"]');
+        if (button) button.innerHTML = SVG_ICONS.map + "收起当日路线";
+      }
+    }
+
+    renderMap();
+    renderHotels();
+    renderTickets();
+    renderCharging();
+    renderDays();
+    renderTodos();
+    renderTips();
+    updateTheme();
+    updateCountdown();
+    openRelevantDay();
+    setInterval(updateCountdown, 1000);
+    setInterval(updateTheme, 60000);
+  </script>
+</body>
+</html>

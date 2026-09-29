@@ -1,0 +1,14 @@
+{
+  "name": "anhui-roadtrip-2026",
+  "version": "1.0.0",
+  "private": true,
+  "description": "2026 National Day Anhui self-driving trip guide, deployed as a static Cloudflare Worker.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "wrangler deploy --dry-run"
+  },
+  "devDependencies": {
+    "wrangler": "4.143.0"
+  }
+}
